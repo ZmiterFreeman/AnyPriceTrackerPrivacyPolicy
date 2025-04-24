@@ -32,48 +32,46 @@
       <a href="https://policies.google.com/privacy" target="_blank">Google Privacy Policy</a>
     </li>
     <li><strong>Amplitude Analytics</strong><br>
-      Collects anonymized usage statistics (e.g., screen views, button clicks) for analytics and product improvement.<br>
+      Collects anonymized usage statistics (e.g., app installs, app updates, app sessions) for analytics and product improvement.<br>
       No personal content or identifiers such as name or email are collected.<br>
       <a href="https://amplitude.com/privacy" target="_blank">Amplitude Privacy Policy</a>
     </li>
     <li><strong>WebView</strong><br>
-      The App allows users to open third-party websites. These websites may collect their own data as per their respective privacy policies.<br>
-      The App itself does <strong>not process or store</strong> any content from those pages, except for the URL and technical CSS selectors explicitly saved by the user.
-    </li>
+  The App allows users to open third-party websites via an embedded WebView. 
+  If the user chooses to save a specific product page or price information for future tracking, 
+  this data — such as the page URL and related technical details — is stored 
+  <strong>exclusively on the user's device</strong>. 
+  The App does <strong>not automatically collect</strong> any content from visited websites, 
+  and no such data is transmitted to the developer or any third parties.
+</li>
   </ul>
 
   <h2>3. Permissions Used</h2>
-  <table>
-    <tr>
-      <th>Permission</th>
-      <th>Purpose</th>
-    </tr>
-    <tr>
-      <td>Internet access</td>
-      <td>Required to load websites in WebView and send crash/usage data to analytics services.</td>
-    </tr>
-    <tr>
-      <td>Foreground/background access</td>
-      <td>Required to periodically check for updates on saved pages.</td>
-    </tr>
-    <tr>
-      <td>Storage (if applicable)</td>
-      <td>May be used to temporarily store minimal technical data such as saved URLs and selectors. No media or files are accessed.</td>
-    </tr>
-  </table>
+<table>
+  <tr>
+    <th>Permission</th>
+    <th>Purpose</th>
+  </tr>
+  <tr>
+    <td><code>android.permission.INTERNET</code></td>
+    <td>Required to access third-party websites and retrieve data when checking for price changes.</td>
+  </tr>
+  <tr>
+    <td><code>android.permission.ACCESS_NETWORK_STATE</code></td>
+    <td>Used to check if an internet connection is available before attempting to access web pages that the user has selected for price tracking.</td>
+  </tr>
+  <tr>
+    <td><code>android.permission.POST_NOTIFICATIONS</code></td>
+    <td>Used to send notifications to the user when a tracked price changes.</td>
+  </tr>
+</table>
 
-  <h2>4. Data Security</h2>
-  <p>All transmitted data (e.g., analytics, crash logs) is encrypted in transit using HTTPS. No sensitive user data is stored on our servers.</p>
-
-  <h2>5. Children’s Privacy</h2>
-  <p>This App is <strong>not intended for children under 13 years of age</strong>. It does not target children and does not knowingly collect any personal information from them.</p>
-
-  <h2>6. Policy Updates</h2>
+  <h2>4. Policy Updates</h2>
   <p>This policy may be updated from time to time. Changes will be reflected on this page with the updated date.</p>
 
-  <h2>7. Contact</h2>
+  <h2>5. Contact</h2>
   <p>If you have any questions about this Privacy Policy, you can contact the developer:<br>
-  📧 <a href="mailto:zmiter.freeman@gmail.com">zmiter.freeman@gmail.com</a></p>
+  <a href="mailto:zmiter.freeman@gmail.com">zmiter.freeman@gmail.com</a></p>
 
 </body>
 </html>
