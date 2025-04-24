@@ -1,49 +1,79 @@
-<html>
-    <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <style>
-            body {
-                margin: auto;
-            }
-            th:first-child {
-                width: 30%;
-            }
-            th, td {
-                padding: 0.4em;
-            }
-            table, th, td {
-                border: 1px solid black;
-                border-collapse: collapse;
-            }
-            h2 {
-                text-align: center;
-            }
-            ul {
-                -webkit-margin-before: 0.5em;
-                -webkit-margin-after: 0.5em;
-                -webkit-padding-start: 1.5em;
-            }
-            @media only screen and (max-width: 1440px) {
-                body {
-                    max-width: 95%;
-                }
-            }
-            @media only screen and (min-width: 1440px) {
-                body {
-                    max-width: 70%;
-                }
-            }
-        </style>
-    <body>
-<h2>Privacy Policy</h2>
-<p>Last update: April 25, 2025</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Privacy Policy</title>
+  <style>
+    body { font-family: sans-serif; line-height: 1.6; max-width: 800px; margin: 0 auto; padding: 20px; }
+    h1, h2 { color: #333; }
+    table { border-collapse: collapse; width: 100%; margin-top: 10px; }
+    th, td { border: 1px solid #ccc; padding: 8px; }
+    th { background-color: #f9f9f9; }
+  </style>
+</head>
+<body>
 
-<p>This Privacy Policy describes how the Application ("we", "our", or "the App") handles user data. It applies to the current version of the App published on Google Play.</p>
+  <h1>Privacy Policy</h1>
+  <p><strong>Last update:</strong> April 25, 2025</p>
 
-1. Personal Data Collection
-The App does not collect personally identifiable information such as your name, email address, phone number, or address.
-There are no forms for registration, login, or user profile creation.
+  <p>This Privacy Policy describes how the Application ("we", "our", or "the App") handles user data. It applies to the current version of the App published on Google Play.</p>
 
-If you voluntarily contact the developer via email, your email address and message content will only be used to respond to your inquiry and will not be shared with third parties.
-    </body>
+  <h2>1. Personal Data Collection</h2>
+  <p>The App <strong>does not collect</strong> personally identifiable information such as your name, email address, phone number, or address.</p>
+  <p>There are no forms for registration, login, or user profile creation.</p>
+  <p>If you voluntarily contact the developer via email, your email address and message content will only be used to respond to your inquiry and <strong>will not be shared</strong> with third parties.</p>
+
+  <h2>2. Data Collected Automatically</h2>
+  <p>The App uses third-party services to help improve stability and user experience:</p>
+  <ul>
+    <li><strong>Firebase Crashlytics</strong><br>
+      Collects crash logs to help identify and fix bugs.<br>
+      Data includes device model, OS version, and technical crash details.<br>
+      <a href="https://policies.google.com/privacy" target="_blank">Google Privacy Policy</a>
+    </li>
+    <li><strong>Amplitude Analytics</strong><br>
+      Collects anonymized usage statistics (e.g., screen views, button clicks) for analytics and product improvement.<br>
+      No personal content or identifiers such as name or email are collected.<br>
+      <a href="https://amplitude.com/privacy" target="_blank">Amplitude Privacy Policy</a>
+    </li>
+    <li><strong>WebView</strong><br>
+      The App allows users to open third-party websites. These websites may collect their own data as per their respective privacy policies.<br>
+      The App itself does <strong>not process or store</strong> any content from those pages, except for the URL and technical CSS selectors explicitly saved by the user.
+    </li>
+  </ul>
+
+  <h2>3. Permissions Used</h2>
+  <table>
+    <tr>
+      <th>Permission</th>
+      <th>Purpose</th>
+    </tr>
+    <tr>
+      <td>Internet access</td>
+      <td>Required to load websites in WebView and send crash/usage data to analytics services.</td>
+    </tr>
+    <tr>
+      <td>Foreground/background access</td>
+      <td>Required to periodically check for updates on saved pages.</td>
+    </tr>
+    <tr>
+      <td>Storage (if applicable)</td>
+      <td>May be used to temporarily store minimal technical data such as saved URLs and selectors. No media or files are accessed.</td>
+    </tr>
+  </table>
+
+  <h2>4. Data Security</h2>
+  <p>All transmitted data (e.g., analytics, crash logs) is encrypted in transit using HTTPS. No sensitive user data is stored on our servers.</p>
+
+  <h2>5. Children’s Privacy</h2>
+  <p>This App is <strong>not intended for children under 13 years of age</strong>. It does not target children and does not knowingly collect any personal information from them.</p>
+
+  <h2>6. Policy Updates</h2>
+  <p>This policy may be updated from time to time. Changes will be reflected on this page with the updated date.</p>
+
+  <h2>7. Contact</h2>
+  <p>If you have any questions about this Privacy Policy, you can contact the developer:<br>
+  📧 <a href="mailto:zmiter.freeman@gmail.com">zmiter.freeman@gmail.com</a></p>
+
+</body>
 </html>
